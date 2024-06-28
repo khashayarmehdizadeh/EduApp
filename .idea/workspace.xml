@@ -5,24 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8667421-2bae-4eb2-8e80-f6ec178d844e" name="Changes" comment="mkdir entity&#10;12;16&#10;6/29">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EduApp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/model/entity/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/model/entity/enums/Gender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/model/tools/ConnectionProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/commons-dbcp2-2.9.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/commons-logging-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/commons-pool2-2.10.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/gson-2.10.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/log4j-1.2.17.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/lombok-1.18.24.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/ojdbc8-21.9.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/model/entity/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/test/entityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/model/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/model/entity/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +40,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.entityTest.executor": "Run",
     "Application.test.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -99,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1719602664617</updated>
       <workItem from="1719602665769" duration="388000" />
-      <workItem from="1719603527690" duration="2952000" />
+      <workItem from="1719603527690" duration="4347000" />
     </task>
     <task id="LOCAL-00001" summary="mkdir entity&#10;12;16&#10;6/29">
       <option name="closed" value="true" />
@@ -109,7 +97,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719607712851</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="mkdir entity&#10;12;16&#10;6/29">
+      <option name="closed" value="true" />
+      <created>1719607911973</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719607911973</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

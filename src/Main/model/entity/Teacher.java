@@ -7,13 +7,14 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 
+
 import java.time.LocalDate;
 
-@NoArgsConstructor
 @Getter
+@NoArgsConstructor
 @Setter
 @SuperBuilder
-public class Student {
+public class Teacher {
     private int id;
     private String name;
     private String family;
@@ -22,7 +23,9 @@ public class Student {
     private String city;
     private String phoneNumber;
     private String email;
+    private String skills;
     private String address;
+    private Course course;
 
 
     @Override
