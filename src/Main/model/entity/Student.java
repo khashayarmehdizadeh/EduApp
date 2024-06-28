@@ -1,6 +1,7 @@
 package Main.model.entity;
 
 import Main.model.entity.enums.Gender;
+import com.google.gson.Gson;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -21,6 +22,12 @@ public class Student {
     private String city;
     private String phoneNumber;
     private String address;
+
+
+    @Override
+    public String toString() {
+        return new Gson().toJson(this);
+    }
 
 
 }
