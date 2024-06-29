@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8667421-2bae-4eb2-8e80-f6ec178d844e" name="Changes" comment="mkdir entity&#10;&#10;6/29">
-      <change afterPath="$PROJECT_DIR$/src/Main/model/entity/enums/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/model/entity/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/model/entity/Course.java" afterDir="false" />
-    </list>
+    <list default="true" id="c8667421-2bae-4eb2-8e80-f6ec178d844e" name="Changes" comment="mkdir entity&#10;&#10;6/29" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1719602664617</updated>
       <workItem from="1719602665769" duration="388000" />
-      <workItem from="1719603527690" duration="4821000" />
+      <workItem from="1719603527690" duration="5022000" />
     </task>
     <task id="LOCAL-00001" summary="mkdir entity&#10;12;16&#10;6/29">
       <option name="closed" value="true" />
@@ -110,7 +107,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719609276841</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="mkdir entity&#10;&#10;6/29">
+      <option name="closed" value="true" />
+      <created>1719609767587</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719609767587</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
