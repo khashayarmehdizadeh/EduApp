@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8667421-2bae-4eb2-8e80-f6ec178d844e" name="Changes" comment="mkdir entity&#10;&#10;6/29" />
+    <list default="true" id="c8667421-2bae-4eb2-8e80-f6ec178d844e" name="Changes" comment="mkdir entity/crud&#10;&#10;6/29">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/model/da/Database.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/model/tools/ConnectionProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/model/tools/ConnectionProvider.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +61,8 @@
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
-      "oracle"
+      "oracle",
+      "mysql_aurora_aws"
     ]
   }
 }]]></component>
@@ -64,6 +70,18 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Lion\IdeaProjects\EduApp\src" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Database.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/src/Main/model/da/Database.sql" />
+      <script-mode>FILE</script-mode>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Database Script.Database.sql" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -82,6 +100,8 @@
       <updated>1719602664617</updated>
       <workItem from="1719602665769" duration="388000" />
       <workItem from="1719603527690" duration="5022000" />
+      <workItem from="1719690619495" duration="3180000" />
+      <workItem from="1719777057589" duration="83000" />
     </task>
     <task id="LOCAL-00001" summary="mkdir entity&#10;12;16&#10;6/29">
       <option name="closed" value="true" />
@@ -115,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719609767587</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="mkdir entity/crud&#10;&#10;6/29">
+      <option name="closed" value="true" />
+      <created>1719690900973</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719690900973</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,7 +152,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mkdir entity&#10;12;16&#10;6/29" />
     <MESSAGE value="mkdir entity&#10;&#10;6/29" />
-    <option name="LAST_COMMIT_MESSAGE" value="mkdir entity&#10;&#10;6/29" />
+    <MESSAGE value="mkdir entity/crud&#10;&#10;6/29" />
+    <option name="LAST_COMMIT_MESSAGE" value="mkdir entity/crud&#10;&#10;6/29" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
