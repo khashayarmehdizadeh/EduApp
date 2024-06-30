@@ -39,3 +39,4 @@ CREATE TABLE COURSE
     teacher_id references TEACHER
 
 );
+CREATE SEQUENCE course_seq START WITH 1 INCREMENT BY 1;
