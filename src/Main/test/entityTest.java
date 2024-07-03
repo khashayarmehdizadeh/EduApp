@@ -1,14 +1,15 @@
 //package Main.test;
 //
+//import Main.model.bl.StudentBl;
 //import Main.model.entity.Student;
 //import Main.model.entity.enums.Gender;
 //
 //import java.time.LocalDate;
 //
 //public class entityTest {
-//    public static void main(String[] args) {
-//        Student student =
-//                Student.builder()
+//    public static void main(String[] args) throws Exception {
+//      Student student =
+//               Student.builder()
 //                        .id(1)
 //                        .name("khashayar")
 //                        .family("mehdizadeh")
@@ -20,6 +21,7 @@
 //
 //
 //                        .build();
+//        System.out.println(StudentBl.getStudentBl().save(student));
 //        System.out.println(student);
 //    }
 //}
