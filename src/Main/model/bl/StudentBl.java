@@ -1,5 +1,7 @@
 package Main.model.bl;
 
+import Main.controller.exceptions.NoStudentFoundException;
+import Main.model.da.StudentDa;
 import Main.model.entity.Student;
 import Main.model.tools.CRUD;
 import lombok.Getter;
@@ -8,16 +10,20 @@ import java.util.List;
 
 public class StudentBl implements CRUD<Student> {
     @Getter
-    private static StudentBl studentBl=new StudentBl();
-    private StudentBl(){
+    private static StudentBl studentBl = new StudentBl();
+
+    private StudentBl() {
 
     }
+
     @Override
     public Student save(Student student) throws Exception {
-        try (){
+        try (StudentDa studentDa = new StudentDa()) {
+            studentDa.save(student);
+            return student;
+
 
         }
-        return null;
     }
 
     @Override
@@ -26,8 +32,19 @@ public class StudentBl implements CRUD<Student> {
     }
 
     @Override
-    public Student remove(Student student) throws Exception {
-        return null;
+    public Student remove(int id) throws Exception {
+        try (StudentDa studentDa = new StudentDa()) {
+            Student student = studentDa.findById(id);
+            if (student != null) {
+                studentDa.remove(id);
+                return student;
+
+            } else {
+                throw new NoStudentFoundException();
+            }
+
+        }
+
     }
 
     @Override

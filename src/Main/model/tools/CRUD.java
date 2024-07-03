@@ -7,9 +7,9 @@ public interface CRUD<T> {
 
     T edit(T t) throws Exception;
 
-    T remove(T t) throws Exception;
+    T remove(int id) throws Exception;
 
-    List<T> findAll(T t) throws Exception;
+    List<T> findAll() throws Exception;
 
     T findById(int id) throws Exception;
 }
