@@ -28,7 +28,16 @@ public class StudentBl implements CRUD<Student> {
 
     @Override
     public Student edit(Student student) throws Exception {
-        return null;
+        try (StudentDa studentDa = new StudentDa()) {
+            if (studentDa.findById(student.getId()) != null) {
+                studentDa.edit(student);
+                return student;
+
+            } else {
+                throw new NoStudentFoundException();
+            }
+
+        }
     }
 
     @Override
@@ -48,12 +57,33 @@ public class StudentBl implements CRUD<Student> {
     }
 
     @Override
-    public List<Student> findAll(Student student) throws Exception {
-        return null;
+    public List<Student> findAll() throws Exception {
+        try (StudentDa studentDa = new StudentDa()) {
+            List<Student> studentList = studentDa.findAll();
+            if (!studentList.isEmpty()) {
+                return studentList;
+
+            } else {
+                throw new NoStudentFoundException();
+            }
+
+        }
+
     }
 
     @Override
     public Student findById(int id) throws Exception {
-        return null;
+        try (StudentDa studentDa = new StudentDa()) {
+            Student student = studentDa.findById(id);
+            if (student != null) {
+                return student;
+
+
+            }else {
+                throw new NoStudentFoundException();
+            }
+
+
+        }
     }
 }

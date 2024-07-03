@@ -93,6 +93,7 @@ public class StudentDa implements AutoCloseable, CRUD<Student> {
                     .email(resultSet.getString("email"))
                     .address(resultSet.getString("address"))
                     .build();
+            studentList.add(student);
 
         }
 
@@ -101,7 +102,25 @@ public class StudentDa implements AutoCloseable, CRUD<Student> {
 
     @Override
     public Student findById(int id) throws Exception {
-        return null;
+        preparedStatement = connection.prepareStatement("SELECT * FROM  STUDENT WHERE ID=?");
+        preparedStatement.setInt(1, id);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        Student student = null;
+        if (resultSet.next()) {
+            student = Student
+                    .builder()
+                    .id(resultSet.getInt("id"))
+                    .name(resultSet.getString("name"))
+                    .family(resultSet.getString("family"))
+                    .gender(Gender.valueOf(resultSet.getString("gender")))
+                    .birthDate(resultSet.getDate("birthDate").toLocalDate())
+                    .city(resultSet.getString("city"))
+                    .phoneNumber(resultSet.getString("phoneNumber"))
+                    .email(resultSet.getString("email"))
+                    .address(resultSet.getString("address"))
+                    .build();
+        }
+        return student;
     }
 
     @Override
