@@ -22,6 +22,10 @@ public class TeacherBl implements CRUD<Teacher> {
 
     @Override
     public Teacher edit(Teacher teacher) throws Exception {
+        try (TeacherDa teacherDa=new TeacherDa()){
+            if(teacherDa.findById(teacher.getId()))
+
+        }
         return null;
     }
 
