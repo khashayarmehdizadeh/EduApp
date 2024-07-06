@@ -1,6 +1,6 @@
 package Main.model.bl;
 
-import Main.controller.exceptions.NoTeachertFoundException;
+import Main.controller.exceptions.NoTeacherFoundException;
 import Main.model.da.TeacherDa;
 import Main.model.entity.Teacher;
 import Main.model.tools.CRUD;
@@ -33,7 +33,7 @@ public class TeacherBl implements CRUD<Teacher> {
                 teacherDa.edit(teacher);
                 return teacher;
             } else {
-                throw new NoTeachertFoundException();
+                throw new NoTeacherFoundException();
             }
 
         }
@@ -48,7 +48,7 @@ public class TeacherBl implements CRUD<Teacher> {
                 teacherDa.remove(id);
                 return teacher;
             } else {
-                throw new NoTeachertFoundException();
+                throw new NoTeacherFoundException();
             }
 
         }
@@ -61,7 +61,7 @@ public class TeacherBl implements CRUD<Teacher> {
             if (!teacherList.isEmpty()) {
                 return teacherList;
             } else {
-                throw new NoTeachertFoundException();
+                throw new NoTeacherFoundException();
             }
 
         }
@@ -75,7 +75,7 @@ public class TeacherBl implements CRUD<Teacher> {
             if (teacher != null) {
                 return teacher;
             } else {
-                throw new NoTeachertFoundException();
+                throw new NoTeacherFoundException();
             }
 
         }
