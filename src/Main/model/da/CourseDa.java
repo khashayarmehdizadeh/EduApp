@@ -68,6 +68,7 @@ public class CourseDa implements AutoCloseable, CRUD<Course> {
     @Override
     public List<Course> findAll() throws Exception {
         List<Course> courseList=new ArrayList<>();
+        preparedStatement=connection.prepareStatement("SELECT *FROM COURSE ORDER BY ID");
         ResultSet resultSet=preparedStatement.executeQuery();
         while (resultSet.next()){
             Course course=Course
