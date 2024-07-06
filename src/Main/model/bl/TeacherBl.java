@@ -10,7 +10,11 @@ import java.util.List;
 
 public class TeacherBl implements CRUD<Teacher> {
     @Getter
-    public static TeacherBl studentBl = new TeacherBl();
+    public static TeacherBl teacherBl = new TeacherBl();
+
+    private TeacherBl() {
+
+    }
 
     @Override
     public Teacher save(Teacher teacher) throws Exception {

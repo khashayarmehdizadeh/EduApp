@@ -7,7 +7,10 @@ import Main.model.tools.CRUD;
 import Main.model.tools.ConnectionProvider;
 import lombok.extern.log4j.Log4j;
 
+import java.sql.Connection;
 import java.sql.*;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
