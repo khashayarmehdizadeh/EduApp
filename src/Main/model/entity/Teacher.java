@@ -25,7 +25,7 @@ public class Teacher {
     private String email;
     private String skills;
     private String address;
-    private Course course;
+
 
 
     @Override

@@ -1,6 +1,6 @@
 package Main.model.da;
 
-import Main.model.entity.Course;
+
 import Main.model.entity.Teacher;
 import Main.model.entity.enums.Gender;
 import Main.model.tools.CRUD;
@@ -27,7 +27,7 @@ public class TeacherDa implements AutoCloseable, CRUD<Teacher> {
     public Teacher save(Teacher teacher) throws Exception {
         teacher.setId(ConnectionProvider.getConnectionProvider().getNextId("teacher_SEQ"));
         preparedStatement = connection.prepareStatement(
-                "INSERT INTO TEACHER(ID, NAME, FAMILY, GENDER, BIRTHDATE, CITY, PHONENUMBER, EMAIL, SKILLS, ADDRESS, COURSE) VALUES (?,?,?,?,?,?,?,?,?,?,?)"
+                "INSERT INTO TEACHER(ID, NAME, FAMILY, GENDER, BIRTHDATE, CITY, PHONENUMBER, EMAIL, SKILLS, ADDRESS) VALUES (?,?,?,?,?,?,?,?,?,?)"
         );
         preparedStatement.setInt(1, teacher.getId());
         preparedStatement.setString(2, teacher.getName());
@@ -39,14 +39,14 @@ public class TeacherDa implements AutoCloseable, CRUD<Teacher> {
         preparedStatement.setString(8, teacher.getEmail());
         preparedStatement.setString(9, teacher.getSkills());
         preparedStatement.setString(10, teacher.getAddress());
-        preparedStatement.setString(11, teacher.getCourse().getName());
+        preparedStatement.execute();
         return teacher;
     }
 
     @Override
     public Teacher edit(Teacher teacher) throws Exception {
         preparedStatement = connection.prepareStatement(
-                "UPDATE TEACHER SET NAME=?,FAMILY=?,GENDER=?,BIRTHDATE=?,CITY=?,PHONENUMBER=?,EMAIL=?,SKILLS=?,ADDRESS=?,COURSE=? WHERE ID=?"
+                "UPDATE TEACHER SET NAME=?,FAMILY=?,GENDER=?,BIRTHDATE=?,CITY=?,PHONENUMBER=?,EMAIL=?,SKILLS=?,ADDRESS=? WHERE ID=?"
         );
 
         preparedStatement.setString(1, teacher.getName());
@@ -58,8 +58,8 @@ public class TeacherDa implements AutoCloseable, CRUD<Teacher> {
         preparedStatement.setString(7, teacher.getEmail());
         preparedStatement.setString(8, teacher.getSkills());
         preparedStatement.setString(9, teacher.getAddress());
-        preparedStatement.setString(10, teacher.getCourse().getName());
-        preparedStatement.setInt(11, teacher.getId());
+        preparedStatement.setInt(10, teacher.getId());
+        preparedStatement.execute();
         return teacher;
     }
 
@@ -91,7 +91,7 @@ public class TeacherDa implements AutoCloseable, CRUD<Teacher> {
                     .email(resultSet.getString("email"))
                     .skills(resultSet.getString("skills"))
                     .address(resultSet.getString("address"))
-                    .course(Course.builder().id(resultSet.getInt("course")).build())
+
                     .build();
             teacherList.add(teacher);
         }
@@ -117,7 +117,8 @@ public class TeacherDa implements AutoCloseable, CRUD<Teacher> {
                     .email(resultSet.getString("email"))
                     .skills(resultSet.getString("skills"))
                     .address(resultSet.getString("address"))
-                    .course(Course.builder().id(resultSet.getInt("course")).build())
+
+
 
                     .build();
         }

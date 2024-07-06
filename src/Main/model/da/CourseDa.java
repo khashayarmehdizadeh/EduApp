@@ -34,8 +34,9 @@ public class CourseDa implements AutoCloseable, CRUD<Course> {
         preparedStatement.setString(3, course.getDepartment().name());
         preparedStatement.setString(4, course.getInfo());
         preparedStatement.setInt(5, course.getCapacity());
-        preparedStatement.setString(6, String.valueOf(course.getTeacher().getId()));
+        preparedStatement.setInt(6, course.getTeacher().getId());
         preparedStatement.execute();
+
         return course;
     }
 
@@ -49,7 +50,7 @@ public class CourseDa implements AutoCloseable, CRUD<Course> {
         preparedStatement.setString(2, course.getDepartment().name());
         preparedStatement.setString(3, course.getInfo());
         preparedStatement.setInt(4, course.getCapacity());
-        preparedStatement.setString(5, String.valueOf(course.getTeacher().getId()));
+        preparedStatement.setInt(5, course.getTeacher().getId());
         preparedStatement.setInt(6, course.getId());
         preparedStatement.execute();
         return course;
