@@ -86,11 +86,30 @@ public class CourseDa implements AutoCloseable, CRUD<Course> {
 
     @Override
     public Course findById(int id) throws Exception {
-        return null;
+        preparedStatement=connection.prepareStatement("SELECT * FROM COURSE WHERE ID=?");
+        preparedStatement.setInt(1,id);
+        ResultSet resultSet=preparedStatement.executeQuery();
+        Course course=null;
+        if (resultSet.next()){
+            course=Course
+                    .builder()
+
+                    .id(resultSet.getInt("id"))
+                    .name(resultSet.getString("name"))
+                    .department(Department.valueOf(resultSet.getString("department")))
+                    .info(resultSet.getString("info"))
+                    .capacity(resultSet.getInt("capacity"))
+                    .teacher(Teacher.builder().id(resultSet.getInt("teacher_id")).build())
+                    .build();
+
+        }
+        return course;
     }
 
     @Override
     public void close() throws Exception {
+        preparedStatement.close();
+        connection.close();
 
     }
 }
