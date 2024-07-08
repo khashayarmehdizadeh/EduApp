@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Getter
@@ -20,6 +22,7 @@ public class Course {
     private String info;
     private int capacity;
     private Teacher teacher;
+
 
     @Override
     public String toString() {

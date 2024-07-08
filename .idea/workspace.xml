@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8667421-2bae-4eb2-8e80-f6ec178d844e" name="Changes" comment="mkdir Database">
-      <change afterPath="$PROJECT_DIR$/src/Main/view/EduApp.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/view/MyApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5fad091d-749d-46a9-bbd1-7a8471a8f815.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5fad091d-749d-46a9-bbd1-7a8471a8f815.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/controller/EduContoroller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/model/entity/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/model/entity/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/view/EduApp.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/view/MyApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/view/MyApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,39 +38,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.MyApp.executor": "Run",
-    "Application.entityTest.executor": "Run",
-    "Application.test.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Lion/IdeaProjects/EduApp/src/lib",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/Lion/IdeaProjects/EduApp/src/Main.java",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editor.preferences.completion",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.MyApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.entityTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lion/IdeaProjects/EduApp/src/Main/view&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Lion/IdeaProjects/EduApp/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "oracle",
-      "mysql_aurora_aws"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;oracle&quot;,
+      &quot;mysql_aurora_aws&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lion\IdeaProjects\EduApp\src\Main\view" />
       <recent name="C:\Users\Lion\IdeaProjects\EduApp\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -79,32 +81,6 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Main.controller.exceptions" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="entityTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main.test.entityTest" />
-      <module name="EduApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Main.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Database.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
-      <script-file value="$PROJECT_DIR$/src/Main/model/da/Database.sql" />
-      <script-mode>FILE</script-mode>
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.entityTest" />
-        <item itemvalue="Database Script.Database.sql" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -130,7 +106,9 @@
       <workItem from="1720040582976" duration="1054000" />
       <workItem from="1720208018330" duration="1127000" />
       <workItem from="1720287396129" duration="8600000" />
-      <workItem from="1720383336901" duration="2212000" />
+      <workItem from="1720383336901" duration="2379000" />
+      <workItem from="1720464191866" duration="4486000" />
+      <workItem from="1720468702919" duration="2952000" />
     </task>
     <task id="LOCAL-00001" summary="mkdir entity&#10;12;16&#10;6/29">
       <option name="closed" value="true" />
@@ -284,7 +262,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720296702143</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="mkdir Database">
+      <option name="closed" value="true" />
+      <created>1720386645796</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1720386645796</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
