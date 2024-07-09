@@ -1,6 +1,6 @@
 package Main.model.da;
 
-import Main.model.entity.Course;
+
 import Main.model.entity.Student;
 import Main.model.entity.enums.City;
 import Main.model.entity.enums.Gender;
@@ -29,7 +29,7 @@ public class StudentDa implements AutoCloseable, CRUD<Student> {
     public Student save(Student student) throws Exception {
         student.setId(ConnectionProvider.getConnectionProvider().getNextId("student_SEQ"));
         preparedStatement = connection.prepareStatement(
-                "INSERT INTO STUDENT(ID, NAME, FAMILY, GENDER, BIRTHDATE, CITY, PHONENUMBER, EMAIL, ADDRESS) VALUES (?,?,?,?,?,?,?,?,?,?)"
+                "INSERT INTO STUDENT(ID, NAME, FAMILY, GENDER, BIRTHDATE, CITY, PHONENUMBER, EMAIL, ADDRESS) VALUES (?,?,?,?,?,?,?,?,?)"
         );
         preparedStatement.setInt(1, student.getId());
         preparedStatement.setString(2, student.getName());
@@ -60,7 +60,6 @@ public class StudentDa implements AutoCloseable, CRUD<Student> {
         preparedStatement.setString(6, student.getPhoneNumber());
         preparedStatement.setString(7, student.getEmail());
         preparedStatement.setString(8, student.getAddress());
-
         preparedStatement.setInt(9, student.getId());
         preparedStatement.execute();
 
