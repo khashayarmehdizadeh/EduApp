@@ -8,8 +8,8 @@ CREATE TABLE STUDENT
     city        nvarchar2(20),
     phoneNumber nvarchar2(12),
     email       nvarchar2(30),
-    address     nvarchar2(50),
-    course_id references COURSE
+    address     nvarchar2(50)
+
 
 
 );

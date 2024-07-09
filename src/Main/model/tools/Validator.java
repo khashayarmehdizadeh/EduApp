@@ -11,4 +11,20 @@ public class Validator {
 
         }
     }
+
+    public static String emailValidator(String email, String message) throws Exception {
+        if (Pattern.matches("\\w*\\.*\\w*\\@(gmail|yahoo).com", email)) {
+            return email;
+        } else {
+            throw new Exception(message);
+        }
+    }
+
+    public static String phoneValidator(String phone, String message) throws Exception {
+        if (Pattern.matches("09\\d{10}|\\+98\\d{10}", phone)) {
+            return phone;
+        } else {
+            throw new Exception(message);
+        }
+    }
 }

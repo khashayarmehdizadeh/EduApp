@@ -29,7 +29,7 @@ public class StudentDa implements AutoCloseable, CRUD<Student> {
     public Student save(Student student) throws Exception {
         student.setId(ConnectionProvider.getConnectionProvider().getNextId("student_SEQ"));
         preparedStatement = connection.prepareStatement(
-                "INSERT INTO STUDENT(ID, NAME, FAMILY, GENDER, BIRTHDATE, CITY, PHONENUMBER, EMAIL, ADDRESS,COURSE_ID) VALUES (?,?,?,?,?,?,?,?,?,?)"
+                "INSERT INTO STUDENT(ID, NAME, FAMILY, GENDER, BIRTHDATE, CITY, PHONENUMBER, EMAIL, ADDRESS) VALUES (?,?,?,?,?,?,?,?,?,?)"
         );
         preparedStatement.setInt(1, student.getId());
         preparedStatement.setString(2, student.getName());
@@ -40,7 +40,7 @@ public class StudentDa implements AutoCloseable, CRUD<Student> {
         preparedStatement.setString(7, student.getPhoneNumber());
         preparedStatement.setString(8, student.getEmail());
         preparedStatement.setString(9, student.getAddress());
-        preparedStatement.setInt(10,student.getCourse().getId());
+
         preparedStatement.execute();
 
 
@@ -50,7 +50,7 @@ public class StudentDa implements AutoCloseable, CRUD<Student> {
     @Override
     public Student edit(Student student) throws Exception {
         preparedStatement = connection.prepareStatement(
-                "UPDATE STUDENT SET NAME=?,FAMILY=?,GENDER=?,BIRTHDATE=?,CITY=?,PHONENUMBER=?,EMAIL=?,ADDRESS=?,COURSE_ID=? WHERE ID=?"
+                "UPDATE STUDENT SET NAME=?,FAMILY=?,GENDER=?,BIRTHDATE=?,CITY=?,PHONENUMBER=?,EMAIL=?,ADDRESS=? WHERE ID=?"
         );
         preparedStatement.setString(1, student.getName());
         preparedStatement.setString(2, student.getFamily());
@@ -60,8 +60,8 @@ public class StudentDa implements AutoCloseable, CRUD<Student> {
         preparedStatement.setString(6, student.getPhoneNumber());
         preparedStatement.setString(7, student.getEmail());
         preparedStatement.setString(8, student.getAddress());
-        preparedStatement.setInt(9,student.getCourse().getId());
-        preparedStatement.setInt(10, student.getId());
+
+        preparedStatement.setInt(9, student.getId());
         preparedStatement.execute();
 
 
@@ -96,7 +96,7 @@ public class StudentDa implements AutoCloseable, CRUD<Student> {
                     .phoneNumber(resultSet.getString("phoneNumber"))
                     .email(resultSet.getString("email"))
                     .address(resultSet.getString("address"))
-                    .course(Course.builder().name(resultSet.getString("course_id")).build())
+
                     .build();
             studentList.add(student);
 
@@ -123,7 +123,6 @@ public class StudentDa implements AutoCloseable, CRUD<Student> {
                     .phoneNumber(resultSet.getString("phoneNumber"))
                     .email(resultSet.getString("email"))
                     .address(resultSet.getString("address"))
-                    .course(Course.builder().name(resultSet.getString("course_id")).build())
                     .build();
         }
         return student;
