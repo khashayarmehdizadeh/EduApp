@@ -1,5 +1,6 @@
 package Main.model.entity;
 
+import Main.model.entity.enums.City;
 import Main.model.entity.enums.Gender;
 import com.google.gson.Gson;
 import lombok.Getter;
@@ -19,7 +20,7 @@ public class Student {
     private String family;
     private Gender gender;
     private LocalDate birthDate;
-    private String city;
+    private City city;
     private String phoneNumber;
     private String email;
     private String address;

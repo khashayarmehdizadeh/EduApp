@@ -2,6 +2,7 @@ package Main.model.da;
 
 import Main.model.entity.Course;
 import Main.model.entity.Student;
+import Main.model.entity.enums.City;
 import Main.model.entity.enums.Gender;
 import Main.model.tools.CRUD;
 import Main.model.tools.ConnectionProvider;
@@ -35,7 +36,7 @@ public class StudentDa implements AutoCloseable, CRUD<Student> {
         preparedStatement.setString(3, student.getFamily());
         preparedStatement.setString(4, student.getGender().name());
         preparedStatement.setDate(5, Date.valueOf(student.getBirthDate()));
-        preparedStatement.setString(6, student.getCity());
+        preparedStatement.setString(6, student.getCity().name());
         preparedStatement.setString(7, student.getPhoneNumber());
         preparedStatement.setString(8, student.getEmail());
         preparedStatement.setString(9, student.getAddress());
@@ -55,7 +56,7 @@ public class StudentDa implements AutoCloseable, CRUD<Student> {
         preparedStatement.setString(2, student.getFamily());
         preparedStatement.setString(3, student.getGender().name());
         preparedStatement.setDate(4, Date.valueOf(student.getBirthDate()));
-        preparedStatement.setString(5, student.getCity());
+        preparedStatement.setString(5, student.getCity().name());
         preparedStatement.setString(6, student.getPhoneNumber());
         preparedStatement.setString(7, student.getEmail());
         preparedStatement.setString(8, student.getAddress());
@@ -91,7 +92,7 @@ public class StudentDa implements AutoCloseable, CRUD<Student> {
                     .family(resultSet.getString("family"))
                     .gender(Gender.valueOf(resultSet.getString("gender")))
                     .birthDate(resultSet.getDate("birthDate").toLocalDate())
-                    .city(resultSet.getString("city"))
+                    .city(City.valueOf(resultSet.getString("city")))
                     .phoneNumber(resultSet.getString("phoneNumber"))
                     .email(resultSet.getString("email"))
                     .address(resultSet.getString("address"))
@@ -118,7 +119,7 @@ public class StudentDa implements AutoCloseable, CRUD<Student> {
                     .family(resultSet.getString("family"))
                     .gender(Gender.valueOf(resultSet.getString("gender")))
                     .birthDate(resultSet.getDate("birthDate").toLocalDate())
-                    .city(resultSet.getString("city"))
+                    .city(City.valueOf(resultSet.getString("city")))
                     .phoneNumber(resultSet.getString("phoneNumber"))
                     .email(resultSet.getString("email"))
                     .address(resultSet.getString("address"))
