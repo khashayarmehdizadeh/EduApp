@@ -38,6 +38,7 @@
                   <RowConstraints maxHeight="62.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
                   <RowConstraints fx:id="genderToggle" maxHeight="52.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
                   <RowConstraints maxHeight="52.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="52.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
                   <Label text="Id" />
@@ -60,6 +61,8 @@
                      </children>
                   </Pane>
                   <ComboBox fx:id="cityCmb" prefHeight="25.0" prefWidth="147.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="Course id" GridPane.rowIndex="9" />
+                  <ComboBox fx:id="coureidCmb" prefHeight="25.0" prefWidth="147.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
                </children>
             </GridPane>
             <HBox layoutX="35.0" layoutY="460.0" prefHeight="25.0" prefWidth="210.0">
