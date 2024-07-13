@@ -24,6 +24,7 @@ public class Student {
     private String phoneNumber;
     private String email;
     private String address;
+    private Course course;
 
 
 

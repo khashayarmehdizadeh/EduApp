@@ -9,6 +9,7 @@ CREATE TABLE STUDENT
     phoneNumber nvarchar2(12),
     email       nvarchar2(30),
     address     nvarchar2(50),
+    course_id references COURSE
 
 
 
