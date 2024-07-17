@@ -4,6 +4,7 @@ import Main.model.bl.StudentBl;
 
 import Main.model.entity.Student;
 import Main.model.entity.enums.City;
+import Main.model.entity.enums.Course;
 import Main.model.entity.enums.Gender;
 import Main.model.tools.Validator;
 import javafx.collections.FXCollections;
@@ -30,6 +31,8 @@ public class EduContoroller implements Initializable {
     @FXML
     private ComboBox cityCmb;
     @FXML
+    private ComboBox courseCmb;
+    @FXML
     private Button saveBtn, editBtn, removeBtn;
     @FXML
     private TableView<Student> tableStudent;
@@ -37,12 +40,15 @@ public class EduContoroller implements Initializable {
     private TableColumn<Student, Integer> idCol;
 
     @FXML
-    private TableColumn<Student, String> nameCol, familyCol, phoneCol;
+    private TableColumn<Student, String> nameCol, familyCol, phoneCol,courseCol,cityCol;
 
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         log.info("App started");
+        for(Course value:Course.values()){
+            courseCmb.getItems().add(value.name());
+        }
         for (Gender value : Gender.values()) {
             genderCmb.getItems().add(value.name());
         }
@@ -64,6 +70,7 @@ public class EduContoroller implements Initializable {
                         .phoneNumber(phoneNumberTxt.getText())
                         .address(addressTxt.getText())
                         .gender(Gender.valueOf((String) genderCmb.getSelectionModel().getSelectedItem()))
+                        .course(Course.valueOf((String) courseCmb.getSelectionModel().getSelectedItem()))
                         .birthDate(birthDate.getValue())
                         .build();
                 StudentBl.getStudentBl().save(student);
@@ -92,6 +99,7 @@ public class EduContoroller implements Initializable {
                         .phoneNumber(phoneNumberTxt.getText())
                         .address(addressTxt.getText())
                         .gender(Gender.valueOf((String) genderCmb.getSelectionModel().getSelectedItem()))
+                        .course(Course.valueOf((String) courseCmb.getSelectionModel().getSelectedItem()))
                         .birthDate(birthDate.getValue())
                         .build();
                 StudentBl.getStudentBl().edit(student);
@@ -130,6 +138,7 @@ public class EduContoroller implements Initializable {
             cityCmb.getSelectionModel().select(student.getCity().ordinal());
             phoneCol.setText(student.getPhoneNumber());
             mailTxt.setText(student.getEmail());
+            courseCmb.getSelectionModel().select(student.getCourse().ordinal());
 
         });
     }
@@ -141,6 +150,8 @@ public class EduContoroller implements Initializable {
         nameCol.setCellValueFactory(new PropertyValueFactory<>("name"));
         familyCol.setCellValueFactory(new PropertyValueFactory<>("family"));
         phoneCol.setCellValueFactory(new PropertyValueFactory<>("phone"));
+        courseCol.setCellValueFactory(new PropertyValueFactory<>("course"));
+        cityCol.setCellValueFactory(new  PropertyValueFactory<>("city"));
 
         tableStudent.setItems(observableList);
     }
@@ -151,6 +162,7 @@ public class EduContoroller implements Initializable {
         familyTxt.clear();
         birthDate.setValue(null);
         cityCmb.getSelectionModel().select(0);
+        courseCmb.getSelectionModel().select(0);
         mailTxt.clear();
         addressTxt.clear();
         phoneNumberTxt.clear();

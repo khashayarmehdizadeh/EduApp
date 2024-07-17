@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8667421-2bae-4eb2-8e80-f6ec178d844e" name="Changes" comment="update new data">
+    <list default="true" id="c8667421-2bae-4eb2-8e80-f6ec178d844e" name="Changes" comment="entity test its ok!">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/controller/EduContoroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/controller/EduContoroller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/test/entityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/test/entityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/view/EduApp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/view/EduApp.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +114,7 @@
       <workItem from="1720519037298" duration="995000" />
       <workItem from="1720554882090" duration="4466000" />
       <workItem from="1720903506382" duration="2249000" />
-      <workItem from="1721247452811" duration="1009000" />
+      <workItem from="1721247452811" duration="2524000" />
     </task>
     <task id="LOCAL-00001" summary="mkdir entity&#10;12;16&#10;6/29">
       <option name="closed" value="true" />
@@ -337,7 +340,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721248401948</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="entity test its ok!">
+      <option name="closed" value="true" />
+      <created>1721248578136</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1721248578136</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,7 +360,8 @@
     <MESSAGE value="mkdir entity/crud&#10;&#10;6/29" />
     <MESSAGE value="mkdir Database" />
     <MESSAGE value="update new data" />
-    <option name="LAST_COMMIT_MESSAGE" value="update new data" />
+    <MESSAGE value="entity test its ok!" />
+    <option name="LAST_COMMIT_MESSAGE" value="entity test its ok!" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
