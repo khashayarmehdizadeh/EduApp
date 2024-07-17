@@ -1,6 +1,7 @@
 package Main.model.entity;
 
 import Main.model.entity.enums.City;
+import Main.model.entity.enums.Course;
 import Main.model.entity.enums.Gender;
 import com.google.gson.Gson;
 import lombok.Getter;

@@ -1,5 +1,6 @@
 package Main.model.entity;
 
+import Main.model.entity.enums.Course;
 import Main.model.entity.enums.Gender;
 import com.google.gson.Gson;
 import lombok.Getter;
@@ -25,6 +26,7 @@ public class Teacher {
     private String email;
     private String skills;
     private String address;
+    private Course course;
 
 
 
