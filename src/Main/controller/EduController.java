@@ -21,17 +21,17 @@ import java.util.ResourceBundle;
 
 @Log4j
 
-public class EduContoroller implements Initializable {
+public class EduController implements Initializable {
     @FXML
     private TextField idTxt, nameTxt, familyTxt, mailTxt, phoneNumberTxt, addressTxt;
     @FXML
     private DatePicker birthDate;
     @FXML
-    private ComboBox genderCmb;
+    private ComboBox <String>genderCmb;
     @FXML
-    private ComboBox cityCmb;
+    private ComboBox <String>cityCmb;
     @FXML
-    private ComboBox courseCmb;
+    private ComboBox <String> courseCmb;
     @FXML
     private Button saveBtn, editBtn, removeBtn;
     @FXML
@@ -62,26 +62,27 @@ public class EduContoroller implements Initializable {
         }
         saveBtn.setOnAction(event -> {
             try {
-                Student student = Student.builder()
+                Student student = Student
+                        .builder()
                         .name(Validator.nameValidator(nameTxt.getText(), "Invalid Name"))
                         .family(Validator.nameValidator(familyTxt.getText(), "Invalid Family"))
-                        .city(City.valueOf((String) cityCmb.getSelectionModel().getSelectedItem()))
+                        .city(City.valueOf( cityCmb.getSelectionModel().getSelectedItem()))
                         .email(mailTxt.getText())
                         .phoneNumber(phoneNumberTxt.getText())
                         .address(addressTxt.getText())
-                        .gender(Gender.valueOf((String) genderCmb.getSelectionModel().getSelectedItem()))
-                        .course(Course.valueOf((String) courseCmb.getSelectionModel().getSelectedItem()))
+                        .gender(Gender.valueOf( genderCmb.getSelectionModel().getSelectedItem()))
+                        .course(Course.valueOf( courseCmb.getSelectionModel().getSelectedItem()))
                         .birthDate(birthDate.getValue())
                         .build();
                 StudentBl.getStudentBl().save(student);
-                Alert alert = new Alert(Alert.AlertType.INFORMATION, "save\n" + student.toString());
+                Alert alert = new Alert(Alert.AlertType.INFORMATION, "save\n" + student);
                 alert.show();
                 resetForm();
                 log.info("student saved" + student);
 
 
             } catch (Exception e) {
-                Alert alert = new Alert(Alert.AlertType.INFORMATION, "Student Error\n" + e.getMessage());
+                Alert alert = new Alert(Alert.AlertType.ERROR, "Student Error\n" + e.getMessage());
                 alert.show();
                 log.error("save error:" + e.getMessage());
 
@@ -91,25 +92,28 @@ public class EduContoroller implements Initializable {
         editBtn.setOnAction(event -> {
             try {
                 Student student = Student.builder()
-                        // .id(Integer.parseInt(idTxt.getText()))
+                        .id(Integer.parseInt(idTxt.getText()))
                         .name(Validator.nameValidator(nameTxt.getText(), "Invalid Name"))
                         .family(Validator.nameValidator(familyTxt.getText(), "Invalid Family"))
-                        .city(City.valueOf((String) cityCmb.getSelectionModel().getSelectedItem()))
+                        .city(City.valueOf( cityCmb.getSelectionModel().getSelectedItem()))
                         .email(mailTxt.getText())
                         .phoneNumber(phoneNumberTxt.getText())
                         .address(addressTxt.getText())
-                        .gender(Gender.valueOf((String) genderCmb.getSelectionModel().getSelectedItem()))
-                        .course(Course.valueOf((String) courseCmb.getSelectionModel().getSelectedItem()))
+                        .gender(Gender.valueOf( genderCmb.getSelectionModel().getSelectedItem()))
+                        .course(Course.valueOf( courseCmb.getSelectionModel().getSelectedItem()))
                         .birthDate(birthDate.getValue())
                         .build();
                 StudentBl.getStudentBl().edit(student);
                 Alert alert = new Alert(Alert.AlertType.INFORMATION, "student edited\n" + student);
                 alert.show();
+                resetForm();
+                log.info("Student Edited"+student);
 
 
             } catch (Exception e) {
-                Alert alert = new Alert(Alert.AlertType.INFORMATION, "Student eit error\n" + e.getMessage());
+                Alert alert = new Alert(Alert.AlertType.ERROR, "Student eit error\n" + e.getMessage());
                 alert.show();
+                log.error("Edit Error"+e.getMessage());
 
 
             }
@@ -127,6 +131,7 @@ public class EduContoroller implements Initializable {
                 alert.show();
                 log.error("Remove Error : " + e.getMessage());
             }
+
         });
         tableStudent.setOnMouseClicked((event) -> {
             Student student = tableStudent.getSelectionModel().getSelectedItem();
