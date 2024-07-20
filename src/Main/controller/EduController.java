@@ -2,11 +2,13 @@ package Main.controller;
 
 import Main.model.bl.StudentBl;
 
+import Main.model.da.StudentDa;
 import Main.model.entity.Student;
 import Main.model.entity.enums.City;
 import Main.model.entity.enums.Course;
 import Main.model.entity.enums.Gender;
 import Main.model.tools.Validator;
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -23,7 +25,7 @@ import java.util.ResourceBundle;
 
 public class EduController implements Initializable {
     @FXML
-    private TextField idTxt, nameTxt, familyTxt, mailTxt, phoneNumberTxt, addressTxt;
+    private TextField idTxt, nameTxt, familyTxt, mailTxt, phoneNumberTxt, addressTxt,searchTxt;
     @FXML
     private DatePicker birthDate;
     @FXML
@@ -40,7 +42,9 @@ public class EduController implements Initializable {
     private TableColumn<Student, Integer> idCol;
 
     @FXML
-    private TableColumn<Student, String> nameCol, familyCol, phoneCol,courseCol,cityCol;
+    private TableColumn<Student, String> nameCol, familyCol,courseCol;
+    @FXML
+    private  MenuItem closeMnu,newMnu;
 
 
     @Override
@@ -59,7 +63,31 @@ public class EduController implements Initializable {
         } catch (Exception e) {
             Alert alert = new Alert(Alert.AlertType.ERROR, "Load Error\n" + e.getMessage());
             alert.show();
+
         }
+        newMnu.setOnAction(event -> {
+            try {
+                resetForm();
+            } catch (Exception e) {
+                Alert alert = new Alert(Alert.AlertType.ERROR, " Load Error\n" + e.getMessage());
+                alert.show();
+            }
+        });
+
+        closeMnu.setOnAction((event -> {
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Are You Sure ?");
+            if(alert.showAndWait().get().equals(ButtonType.OK)) {
+                Platform.exit();
+            }
+        }));
+//        aboutMnu.setOnAction((event)->{
+//            try{
+//                WindowsManager.showAboutForm();
+//            }catch (Exception e){
+//                Alert alert = new Alert(Alert.AlertType.ERROR, " Load Error\n" + e.getMessage());
+//                alert.show();
+//            }
+//        });
         saveBtn.setOnAction(event -> {
             try {
                 Student student = Student
@@ -124,6 +152,7 @@ public class EduController implements Initializable {
                 StudentBl.getStudentBl().remove(Integer.parseInt(idTxt.getText()));
                 Alert alert = new Alert(Alert.AlertType.INFORMATION, " student Removed\n" + idTxt.getText());
                 alert.show();
+                log.info("student Removed " + idTxt.getText());
                 resetForm();
             } catch (Exception e) {
                 Alert alert = new Alert(Alert.AlertType.ERROR, " student Remove Error\n" + e.getMessage());
@@ -132,6 +161,14 @@ public class EduController implements Initializable {
             }
 
 
+        });
+        searchTxt.setOnKeyReleased((event) -> {
+            try (StudentDa studentDa = new StudentDa()) {
+                showDataOnTable(studentDa.findByFamily(searchTxt.getText()));
+            } catch (Exception e) {
+                Alert alert = new Alert(Alert.AlertType.ERROR, " Persons\n" + e.getMessage());
+                alert.show();
+            }
         });
         tableStudent.setOnMouseClicked((event) -> {
             Student student = tableStudent.getSelectionModel().getSelectedItem();

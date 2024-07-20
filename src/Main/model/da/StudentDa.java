@@ -1,7 +1,6 @@
 package Main.model.da;
 
 
-
 import Main.model.entity.Student;
 import Main.model.entity.enums.City;
 import Main.model.entity.enums.Course;
@@ -42,7 +41,7 @@ public class StudentDa implements AutoCloseable, CRUD<Student> {
         preparedStatement.setString(7, student.getPhoneNumber());
         preparedStatement.setString(8, student.getEmail());
         preparedStatement.setString(9, student.getAddress());
-        preparedStatement.setString(10,student.getCourse().name());
+        preparedStatement.setString(10, student.getCourse().name());
 
         preparedStatement.execute();
 
@@ -63,7 +62,7 @@ public class StudentDa implements AutoCloseable, CRUD<Student> {
         preparedStatement.setString(6, student.getPhoneNumber());
         preparedStatement.setString(7, student.getEmail());
         preparedStatement.setString(8, student.getAddress());
-        preparedStatement.setString(9,student.getCourse().name());
+        preparedStatement.setString(9, student.getCourse().name());
         preparedStatement.setInt(10, student.getId());
         preparedStatement.execute();
 
@@ -132,7 +131,30 @@ public class StudentDa implements AutoCloseable, CRUD<Student> {
         }
         return student;
     }
-    //public Student findbyFamily(String family)
+
+    public List<Student> findByFamily(String family) throws SQLException {
+        List<Student> studentList = new ArrayList<>();
+        preparedStatement = connection.prepareStatement("SELECT * FROM  STUDENT WHERE FAMILY LIKE ? ORDER BY ID");
+        preparedStatement.setString(1,family+"%");
+        ResultSet resultSet=preparedStatement.executeQuery();
+        while (resultSet.next()){
+            Student student=Student
+                    .builder()
+                    .id(resultSet.getInt("id"))
+                    .name(resultSet.getString("name"))
+                    .family(resultSet.getString("family"))
+                    .gender(Gender.valueOf(resultSet.getString("gender")))
+                    .birthDate(resultSet.getDate("birthDate").toLocalDate())
+                    .city(City.valueOf(resultSet.getString("city")))
+                    .phoneNumber(resultSet.getString("phoneNumber"))
+                    .email(resultSet.getString("email"))
+                    .address(resultSet.getString("address"))
+                    .course(Course.valueOf(resultSet.getString("course")))
+                    .build();
+            studentList.add(student);
+        }
+        return studentList;
+    }
 
     @Override
     public void close() throws Exception {
