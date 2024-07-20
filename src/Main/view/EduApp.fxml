@@ -157,7 +157,7 @@
                   <Font name="Arial Bold" size="18.0" />
                </font>
             </Label>
-            <Separator layoutX="416.0" layoutY="23.0" orientation="VERTICAL" prefHeight="620.0" />
+            <Separator layoutX="416.0" layoutY="23.0" orientation="VERTICAL" prefHeight="920.0" />
             <HBox layoutX="540.0" layoutY="403.0" prefHeight="25.0" prefWidth="210.0" />
             <MenuBar layoutY="-9.0" prefHeight="32.0" prefWidth="837.0">
               <menus>
@@ -178,35 +178,30 @@
                 </Menu>
               </menus>
             </MenuBar>
-            <Pane layoutX="40.0" layoutY="705.0" prefHeight="48.0" prefWidth="200.0">
-               <children>
-                  <TableView fx:id="tableStudent" layoutX="-38.0" layoutY="-67.0" prefHeight="311.0" prefWidth="416.0">
-                    <columns>
-                      <TableColumn fx:id="idCol" prefWidth="42.0" text="Id" />
-                      <TableColumn fx:id="nameCol" prefWidth="68.0" text="Name" />
-                        <TableColumn fx:id="familyCol" prefWidth="71.0" text="Family" />
-                        <TableColumn fx:id="phoneCol" prefWidth="94.0" text="PhoneNumber" />
-                        <TableColumn fx:id="courseCol" prefWidth="76.0" text="Course" />
-                        <TableColumn fx:id="cityCol" prefWidth="64.0" text="City" />
-                    </columns>
-                  </TableView>
-               </children></Pane>
+            <Pane layoutX="40.0" layoutY="705.0" prefHeight="48.0" prefWidth="200.0" />
             <Label layoutX="56.0" layoutY="430.0" text="Birth Date" />
          </children>
       </Pane>
-      <TableView fx:id="teacherTable" layoutX="419.0" layoutY="645.0" prefHeight="311.0" prefWidth="416.0">
+      <TableView fx:id="teacherTable" layoutX="440.0" layoutY="634.0" prefHeight="311.0" prefWidth="372.0">
          <columns>
-            <TableColumn fx:id="idtCol" prefWidth="42.0" text="Id" />
+            <TableColumn fx:id="idtCol" prefWidth="50.0" text="Id" />
             <TableColumn fx:id="nametCol" prefWidth="68.0" text="Name" />
-            <TableColumn fx:id="familytCol" prefWidth="71.0" text="Family" />
-            <TableColumn fx:id="phonetCol" prefWidth="75.0" text="Phone" />
+            <TableColumn fx:id="familytCol" prefWidth="74.0" text="Family" />
             <TableColumn fx:id="phonetCol1" prefWidth="71.0" text="Course" />
-            <TableColumn fx:id="phonetCol11" prefWidth="106.0" text="Skill" />
+            <TableColumn fx:id="phonetCol11" prefWidth="108.0" text="Skill" />
          </columns>
       </TableView>
       <TextField fx:id="searchTxt" layoutX="221.0" layoutY="597.0" prefHeight="17.0" prefWidth="147.0" />
       <TextField fx:id="searchtTxt" layoutX="645.0" layoutY="597.0" prefHeight="17.0" prefWidth="147.0" />
       <Label layoutX="143.0" layoutY="602.0" prefHeight="17.0" prefWidth="43.0" text="Search" />
       <Label layoutX="564.0" layoutY="603.0" prefHeight="17.0" prefWidth="43.0" text="Search" />
+      <TableView fx:id="tableStudent" layoutX="28.0" layoutY="634.0" prefHeight="311.0" prefWidth="372.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="42.0" text="Id" />
+          <TableColumn fx:id="nameCol" prefWidth="117.0" text="Name" />
+            <TableColumn fx:id="familyCol" prefWidth="86.0" text="Family" />
+            <TableColumn fx:id="courseCol" prefWidth="126.0" text="Course" />
+        </columns>
+      </TableView>
    </children>
 </Pane>

@@ -124,13 +124,13 @@ public class EduController implements Initializable {
                 StudentBl.getStudentBl().remove(Integer.parseInt(idTxt.getText()));
                 Alert alert = new Alert(Alert.AlertType.INFORMATION, " student Removed\n" + idTxt.getText());
                 alert.show();
-                log.info("student Removed " + idTxt.getText());
                 resetForm();
             } catch (Exception e) {
                 Alert alert = new Alert(Alert.AlertType.ERROR, " student Remove Error\n" + e.getMessage());
                 alert.show();
-                log.error("Remove Error : " + e.getMessage());
+
             }
+
 
         });
         tableStudent.setOnMouseClicked((event) -> {
@@ -141,7 +141,8 @@ public class EduController implements Initializable {
             birthDate.setValue(student.getBirthDate());
             genderCmb.getSelectionModel().select(student.getGender().ordinal());
             cityCmb.getSelectionModel().select(student.getCity().ordinal());
-            phoneCol.setText(student.getPhoneNumber());
+            phoneNumberTxt.setText(student.getPhoneNumber());
+            addressTxt.setText(student.getAddress());
             mailTxt.setText(student.getEmail());
             courseCmb.getSelectionModel().select(student.getCourse().ordinal());
 
@@ -154,9 +155,7 @@ public class EduController implements Initializable {
         idCol.setCellValueFactory(new PropertyValueFactory<>("id"));
         nameCol.setCellValueFactory(new PropertyValueFactory<>("name"));
         familyCol.setCellValueFactory(new PropertyValueFactory<>("family"));
-        phoneCol.setCellValueFactory(new PropertyValueFactory<>("phone"));
         courseCol.setCellValueFactory(new PropertyValueFactory<>("course"));
-        cityCol.setCellValueFactory(new  PropertyValueFactory<>("city"));
 
         tableStudent.setItems(observableList);
     }
