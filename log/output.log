@@ -1,0 +1,63 @@
+2024-07-14 00:40:59 INFO  EduContoroller:45 - App started
+2024-07-14 00:41:26 ERROR EduContoroller:79 - save error:Invalid Name
+2024-07-14 00:41:31 ERROR EduContoroller:79 - save error:Invalid Name
+2024-07-14 00:42:07 INFO  EduContoroller:45 - App started
+2024-07-18 00:28:53 INFO  EduContoroller:48 - App started
+2024-07-18 00:29:46 INFO  EduContoroller:80 - student saved{"id":2,"name":"khashayar","family":"mehdizade","gender":"male","birthDate":{"year":1999,"month":7,"day":15},"city":"tehran","phoneNumber":"09120185685","email":"mz@gmail.com","address":"testtes","course":"Seo"}
+2024-07-18 00:29:54 INFO  EduContoroller:123 - student Removed 2
+2024-07-18 00:29:54 ERROR EduContoroller:128 - Remove Error : NoStudentFoundException
+2024-07-18 00:34:10 INFO  EduContoroller:48 - App started
+2024-07-18 00:34:25 INFO  EduContoroller:48 - App started
+2024-07-18 00:34:58 INFO  EduContoroller:80 - student saved{"id":3,"name":"ali","family":"rezaii","gender":"male","birthDate":{"year":2013,"month":7,"day":31},"city":"abadan","phoneNumber":"09191057433","email":"mzkhashaya@yahoo.com","address":"saadat abad","course":"JavaEE"}
+2024-07-18 00:35:18 INFO  EduContoroller:123 - student Removed 3
+2024-07-18 00:35:18 ERROR EduContoroller:128 - Remove Error : NoStudentFoundException
+2024-07-18 00:56:34 INFO  EduContoroller:48 - App started
+2024-07-18 00:57:05 INFO  EduContoroller:81 - student saved{"id":4,"name":"khashty","family":"mzz","gender":"male","birthDate":{"year":2009,"month":7,"day":16},"city":"andimeshk","phoneNumber":"09191057433","email":"testtest","address":"testtestets","course":"Seo"}
+2024-07-18 00:57:11 INFO  EduContoroller:127 - student Removed 4
+2024-07-18 00:57:11 ERROR EduContoroller:132 - Remove Error : NoStudentFoundException
+2024-07-18 00:57:54 INFO  EduContoroller:48 - App started
+2024-07-18 00:57:56 ERROR EduContoroller:87 - save error:Invalid Name
+2024-07-18 01:01:18 INFO  EduController:48 - App started
+2024-07-18 01:01:55 ERROR EduController:87 - save error:Invalid Family
+2024-07-18 01:02:07 INFO  EduController:81 - student saved{"id":5,"name":"khashayar","family":"mzsss","gender":"female","birthDate":{"year":2016,"month":7,"day":19},"city":"abadan","phoneNumber":"09105989732","email":"test","address":"test","course":"HtmlCss1"}
+2024-07-18 01:02:24 INFO  EduController:110 - Student Edited{"id":5,"name":"khashayar","family":"mzsss","gender":"female","birthDate":{"year":2016,"month":7,"day":19},"city":"abadan","phoneNumber":"09150185685","email":"test","address":"aliiiiii","course":"HtmlCss1"}
+2024-07-18 01:02:30 INFO  EduController:127 - student Removed 5
+2024-07-18 01:02:30 ERROR EduController:132 - Remove Error : NoStudentFoundException
+2024-07-19 00:39:57 INFO  EduController:48 - App started
+2024-07-19 00:48:00 INFO  EduController:48 - App started
+2024-07-20 11:35:20 INFO  EduController:48 - App started
+2024-07-20 11:35:50 INFO  EduController:81 - student saved{"id":6,"name":"alireza","family":"hassani","gender":"male","birthDate":{"year":2018,"month":7,"day":24},"city":"abadan","phoneNumber":"09191057433","email":"mzkhashyaar@hasan.gmail","address":"test","course":"Seo"}
+2024-07-20 11:36:25 INFO  EduController:48 - App started
+2024-07-20 11:37:03 INFO  EduController:48 - App started
+2024-07-20 11:37:35 INFO  EduController:48 - App started
+2024-07-20 11:37:47 INFO  EduController:110 - Student Edited{"id":6,"name":"alireza","family":"hassani","gender":"male","birthDate":{"year":2018,"month":7,"day":24},"city":"abadan","phoneNumber":"09191057433","email":"mzkhashyaar@hasan.gmail","address":"saadat abad","course":"Seo"}
+2024-07-20 11:37:51 INFO  EduController:127 - student Removed 6
+2024-07-20 11:37:51 ERROR EduController:132 - Remove Error : NoStudentFoundException
+2024-07-20 11:39:18 INFO  EduController:48 - App started
+2024-07-20 11:39:48 INFO  EduController:81 - student saved{"id":7,"name":"alireza","family":"rezai","gender":"male","birthDate":{"year":2016,"month":7,"day":26},"city":"abadan","phoneNumber":"09191057433","email":"mzkhashyaartest","address":"testetst","course":"JavaEE"}
+2024-07-20 11:39:51 INFO  EduController:127 - student Removed 7
+2024-07-20 11:43:20 INFO  EduController:48 - App started
+2024-07-20 11:47:48 INFO  EduController:48 - App started
+2024-07-20 11:48:17 INFO  EduController:81 - student saved{"id":8,"name":"alii","family":"aliiiiii","gender":"male","birthDate":{"year":2013,"month":7,"day":23},"city":"abadan","phoneNumber":"09105989734","email":"mzmzmzmzm","address":"testtest","course":"HtmlCss2"}
+2024-07-20 11:48:40 INFO  EduController:48 - App started
+2024-07-20 12:06:30 INFO  EduController:51 - App started
+2024-07-20 12:06:43 INFO  EduController:51 - App started
+2024-07-20 12:34:21 INFO  EduController:52 - App started
+2024-07-20 12:34:33 INFO  EduController:109 - student saved{"id":9,"name":"ewrqqwer","family":"ewrqqrq","gender":"male","birthDate":{"year":2020,"month":7,"day":15},"city":"abadan","phoneNumber":"","email":"eqwrqwer","address":"eqwreqwr","course":"Seo"}
+2024-07-23 22:56:26 INFO  EduController:52 - App started
+2024-07-23 22:56:32 INFO  EduController:155 - student Removed 9
+2024-07-23 22:57:02 INFO  EduController:52 - App started
+2024-07-23 23:23:47 INFO  EduController:75 - App started
+2024-07-23 23:46:49 INFO  EduController:56 - App started
+2024-07-23 23:46:59 INFO  EduController:56 - App started
+2024-07-23 23:47:33 INFO  EduController:56 - App started
+2024-07-23 23:48:15 INFO  EduController:56 - App started
+2024-07-23 23:48:43 INFO  EduController:113 - student saved{"id":21,"name":"ali","family":"rezai","gender":"male","birthDate":{"year":2015,"month":7,"day":7},"city":"abadan","phoneNumber":"09191023212","email":"mztest","address":"test","course":"Seo"}
+2024-07-23 23:49:02 INFO  EduController:159 - student Removed 21
+2024-07-24 00:09:31 INFO  EduController:57 - App started
+2024-07-24 00:09:56 INFO  EduController:57 - App started
+2024-07-24 00:11:45 INFO  EduController:57 - App started
+2024-07-24 00:14:06 INFO  EduController:57 - App started
+2024-07-24 00:15:37 INFO  EduController:57 - App started
+2024-07-24 00:20:13 INFO  EduController:57 - App started
+2024-07-24 00:22:50 INFO  EduController:57 - App started

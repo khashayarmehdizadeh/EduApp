@@ -9,6 +9,7 @@ import Main.model.entity.enums.City;
 import Main.model.entity.enums.Course;
 import Main.model.entity.enums.Gender;
 import Main.model.tools.Validator;
+import Main.view.WindowsManager;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -45,29 +46,10 @@ public class EduController implements Initializable {
     @FXML
     private TableColumn<Student, String> nameCol, familyCol,courseCol;
     @FXML
-    private  MenuItem closeMnu,newMnu;
+    private  MenuItem closeMnu,newMnu,teacherMnu,aboutMnu;
 
 
 
-//    //teacher controller
-//    @FXML
-//    private TextField idtTxt,nametTxt,familytTxt,citytTxt,phonenumbertTxt,mailtxt,addresstTxt,skilltTxt;
-//    @FXML
-//    private DatePicker birthdatetTxt;
-//    @FXML
-//    private ComboBox<String>gendertTxt;
-//    @FXML
-//    private ComboBox<String>citytCmb;
-//    @FXML
-//    private ComboBox<String>courseteCmb;
-//    @FXML
-//    private Button savetBtn,edittBtn,removetBtn;
-//    @FXML
-//    private TableView<Teacher>teacherTable;
-//    @FXML
-//    private TableColumn<Teacher,Integer>idtCol;
-//    @FXML
-//    private TableColumn<Teacher,String>nametCol,familytCol,coursetCol,skilltCol;
 
 
     @Override
@@ -103,14 +85,22 @@ public class EduController implements Initializable {
                 Platform.exit();
             }
         }));
-//        aboutMnu.setOnAction((event)->{
-//            try{
-//                WindowsManager.showAboutForm();
-//            }catch (Exception e){
-//                Alert alert = new Alert(Alert.AlertType.ERROR, " Load Error\n" + e.getMessage());
-//                alert.show();
-//            }
-//        });
+        aboutMnu.setOnAction((event)->{
+            try{
+                WindowsManager.showAboutForm();
+            }catch (Exception e){
+                Alert alert = new Alert(Alert.AlertType.ERROR, " Load Error\n" + e.getMessage());
+                alert.show();
+            }
+        });
+        teacherMnu.setOnAction((event )-> {
+            try{
+                WindowsManager.showTeacherForm();
+            }catch (Exception e){
+                Alert alert = new Alert(Alert.AlertType.ERROR, " Load Error\n" + e.getMessage());
+                alert.show();
+            }
+        });
         saveBtn.setOnAction(event -> {
             try {
                 Student student = Student

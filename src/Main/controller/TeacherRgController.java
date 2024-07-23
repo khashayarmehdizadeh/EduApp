@@ -8,7 +8,7 @@ import javafx.scene.control.*;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class TracherRgCpntroller implements Initializable {
+public class TeacherRgController implements Initializable {
     @FXML
     private TextField idtTxt, nametTxt, familytTxt, citytTxt, phonenumbertTxt, mailtxt, addresstTxt, skilltTxt;
     @FXML
