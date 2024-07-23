@@ -19,7 +19,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="952.0" prefWidth="837.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.controller.EduController">
+<Pane prefHeight="564.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.controller.EduController">
    <children>
       <Pane layoutY="7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="785.0">
          <children>
@@ -90,76 +90,9 @@
                   <Font name="Arial Bold" size="18.0" />
                </font>
             </Label>
-            <Separator layoutX="2.0" layoutY="78.0" nodeOrientation="LEFT_TO_RIGHT" prefWidth="835.0" />
-            <Separator layoutY="555.0" prefWidth="835.0" />
-            <GridPane layoutX="462.0" layoutY="79.0" prefHeight="334.0" prefWidth="270.0">
-               <columnConstraints>
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-               </columnConstraints>
-               <rowConstraints>
-                  <RowConstraints maxHeight="53.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="36.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="38.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="37.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="69.0" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="52.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="52.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
-               </rowConstraints>
-               <children>
-                  <Label text="Id" />
-                  <Label text="Name" GridPane.rowIndex="1" />
-                  <Label text="Family" GridPane.rowIndex="2" />
-                  <Label text="City" GridPane.rowIndex="3" />
-                  <Label text="Phone number" GridPane.rowIndex="4" />
-                  <Label text="Mail" GridPane.rowIndex="5" />
-                  <Label text="Address" GridPane.rowIndex="6" />
-                  <TextField fx:id="idtTxt" GridPane.columnIndex="1" />
-                  <TextField fx:id="nametTxt" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <TextField fx:id="familytTxt" prefHeight="19.0" prefWidth="108.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <TextField fx:id="phonenumbertTxt" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                  <TextField fx:id="mailtxt" prefHeight="43.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                  <TextField fx:id="addresstTxt" prefHeight="34.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                  <ComboBox fx:id="citytCmb" prefHeight="25.0" prefWidth="147.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                  <Label text="Gender" GridPane.rowIndex="7" />
-                  <ComboBox fx:id="gendertTxt" layoutX="125.0" layoutY="102.0" prefHeight="25.0" prefWidth="147.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-                  <ComboBox fx:id="courseteCmb" layoutX="145.0" layoutY="279.0" prefHeight="25.0" prefWidth="147.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-                  <Label text="Course Name" GridPane.rowIndex="8" />
-               </children>
-            </GridPane>
-            <Label layoutX="459.0" layoutY="430.0" text="Birth Date" />
-            <Label layoutX="464.0" layoutY="473.0" text="Skill" />
-            <DatePicker fx:id="birthdatetTxt" layoutX="597.0" layoutY="424.0" prefHeight="29.0" prefWidth="135.0" />
-            <TextField fx:id="skilltTxt" layoutX="597.0" layoutY="461.0" prefHeight="29.0" prefWidth="135.0" />
-            <HBox layoutX="512.0" layoutY="518.0" prefHeight="25.0" prefWidth="210.0">
-               <children>
-                  <Button fx:id="savetBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="54.0" text="Save">
-                     <HBox.margin>
-                        <Insets left="15.0" />
-                     </HBox.margin>
-                  </Button>
-                  <Button fx:id="edittBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="43.0" text="Edit">
-                     <HBox.margin>
-                        <Insets left="15.0" />
-                     </HBox.margin>
-                  </Button>
-                  <Button fx:id="removetBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="66.0" text="Remove">
-                     <HBox.margin>
-                        <Insets left="15.0" />
-                     </HBox.margin>
-                  </Button>
-               </children>
-            </HBox>
-            <Label layoutX="462.0" layoutY="50.0" prefHeight="25.0" prefWidth="210.0" text="Teacher Register Form">
-               <font>
-                  <Font name="Arial Bold" size="18.0" />
-               </font>
-            </Label>
-            <Separator layoutX="416.0" layoutY="23.0" orientation="VERTICAL" prefHeight="920.0" />
+            <Separator layoutX="416.0" layoutY="23.0" orientation="VERTICAL" prefHeight="530.0" />
             <HBox layoutX="540.0" layoutY="403.0" prefHeight="25.0" prefWidth="210.0" />
-            <MenuBar layoutY="-9.0" prefHeight="32.0" prefWidth="837.0">
+            <MenuBar layoutY="-9.0" prefHeight="32.0" prefWidth="789.0">
               <menus>
                 <Menu fx:id="MnuItm" mnemonicParsing="false" text="File">
                   <items>
@@ -181,28 +114,17 @@
             </MenuBar>
             <Pane layoutX="40.0" layoutY="705.0" prefHeight="48.0" prefWidth="200.0" />
             <Label layoutX="56.0" layoutY="430.0" text="Birth Date" />
+            <TableView fx:id="tableStudent" layoutX="416.0" layoutY="112.0" prefHeight="444.0" prefWidth="372.0">
+              <columns>
+                <TableColumn fx:id="idCol" prefWidth="42.0" text="Id" />
+                <TableColumn fx:id="nameCol" prefWidth="117.0" text="Name" />
+                  <TableColumn fx:id="familyCol" prefWidth="86.0" text="Family" />
+                  <TableColumn fx:id="courseCol" prefWidth="126.0" text="Course" />
+              </columns>
+            </TableView>
+            <TextField fx:id="searchTxt" layoutX="620.0" layoutY="77.0" prefHeight="17.0" prefWidth="147.0" />
+            <Label layoutX="559.0" layoutY="83.0" prefHeight="17.0" prefWidth="43.0" text="Search" />
          </children>
       </Pane>
-      <TableView fx:id="teacherTable" layoutX="440.0" layoutY="634.0" prefHeight="311.0" prefWidth="372.0">
-         <columns>
-            <TableColumn fx:id="idtCol" prefWidth="50.0" text="Id" />
-            <TableColumn fx:id="nametCol" prefWidth="68.0" text="Name" />
-            <TableColumn fx:id="familytCol" prefWidth="74.0" text="Family" />
-            <TableColumn fx:id="phonetCol1" prefWidth="71.0" text="Course" />
-            <TableColumn fx:id="phonetCol11" prefWidth="108.0" text="Skill" />
-         </columns>
-      </TableView>
-      <TextField fx:id="searchTxt" layoutX="221.0" layoutY="597.0" prefHeight="17.0" prefWidth="147.0" />
-      <TextField fx:id="searchtTxt" layoutX="645.0" layoutY="597.0" prefHeight="17.0" prefWidth="147.0" />
-      <Label layoutX="143.0" layoutY="602.0" prefHeight="17.0" prefWidth="43.0" text="Search" />
-      <Label layoutX="564.0" layoutY="603.0" prefHeight="17.0" prefWidth="43.0" text="Search" />
-      <TableView fx:id="tableStudent" layoutX="28.0" layoutY="634.0" prefHeight="311.0" prefWidth="372.0">
-        <columns>
-          <TableColumn fx:id="idCol" prefWidth="42.0" text="Id" />
-          <TableColumn fx:id="nameCol" prefWidth="117.0" text="Name" />
-            <TableColumn fx:id="familyCol" prefWidth="86.0" text="Family" />
-            <TableColumn fx:id="courseCol" prefWidth="126.0" text="Course" />
-        </columns>
-      </TableView>
    </children>
 </Pane>

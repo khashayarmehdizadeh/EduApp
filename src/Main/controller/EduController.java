@@ -4,6 +4,7 @@ import Main.model.bl.StudentBl;
 
 import Main.model.da.StudentDa;
 import Main.model.entity.Student;
+import Main.model.entity.Teacher;
 import Main.model.entity.enums.City;
 import Main.model.entity.enums.Course;
 import Main.model.entity.enums.Gender;
@@ -45,6 +46,28 @@ public class EduController implements Initializable {
     private TableColumn<Student, String> nameCol, familyCol,courseCol;
     @FXML
     private  MenuItem closeMnu,newMnu;
+
+
+
+//    //teacher controller
+//    @FXML
+//    private TextField idtTxt,nametTxt,familytTxt,citytTxt,phonenumbertTxt,mailtxt,addresstTxt,skilltTxt;
+//    @FXML
+//    private DatePicker birthdatetTxt;
+//    @FXML
+//    private ComboBox<String>gendertTxt;
+//    @FXML
+//    private ComboBox<String>citytCmb;
+//    @FXML
+//    private ComboBox<String>courseteCmb;
+//    @FXML
+//    private Button savetBtn,edittBtn,removetBtn;
+//    @FXML
+//    private TableView<Teacher>teacherTable;
+//    @FXML
+//    private TableColumn<Teacher,Integer>idtCol;
+//    @FXML
+//    private TableColumn<Teacher,String>nametCol,familytCol,coursetCol,skilltCol;
 
 
     @Override
