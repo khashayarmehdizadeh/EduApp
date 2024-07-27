@@ -47,7 +47,9 @@ public class EduController implements Initializable {
     @FXML
     private  MenuItem closeMnu,newMnu,aboutMnu;
     @FXML
-    private TextField idtTxt,
+    private TextField idtTxt,nametTxt,familytTxt,mailetTxt,skilltTxt,phonenumbertTxt,addresstTxt;
+    @FXML
+    private DatePicker birthdatetTxt;
 
 
 
