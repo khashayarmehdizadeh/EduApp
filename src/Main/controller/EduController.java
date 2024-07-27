@@ -4,7 +4,6 @@ import Main.model.bl.StudentBl;
 
 import Main.model.da.StudentDa;
 import Main.model.entity.Student;
-import Main.model.entity.Teacher;
 import Main.model.entity.enums.City;
 import Main.model.entity.enums.Course;
 import Main.model.entity.enums.Gender;
@@ -46,7 +45,9 @@ public class EduController implements Initializable {
     @FXML
     private TableColumn<Student, String> nameCol, familyCol,courseCol;
     @FXML
-    private  MenuItem closeMnu,newMnu,teacherMnu,aboutMnu;
+    private  MenuItem closeMnu,newMnu,aboutMnu;
+    @FXML
+    private TextField idtTxt,
 
 
 
@@ -88,14 +89,6 @@ public class EduController implements Initializable {
         aboutMnu.setOnAction((event)->{
             try{
                 WindowsManager.showAboutForm();
-            }catch (Exception e){
-                Alert alert = new Alert(Alert.AlertType.ERROR, " Load Error\n" + e.getMessage());
-                alert.show();
-            }
-        });
-        teacherMnu.setOnAction((event )-> {
-            try{
-                WindowsManager.showTeacherForm();
             }catch (Exception e){
                 Alert alert = new Alert(Alert.AlertType.ERROR, " Load Error\n" + e.getMessage());
                 alert.show();

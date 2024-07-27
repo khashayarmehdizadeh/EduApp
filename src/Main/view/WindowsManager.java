@@ -18,18 +18,6 @@ public class WindowsManager {
         stage.show();
     }
 
-
-    public static void showTeacherForm() throws IOException {
-        Stage stage = new Stage();
-        Scene scene = new Scene(
-                FXMLLoader.load(WindowsManager.class.getResource("view/TeacherRg.fxml"))
-        );
-
-        stage.setScene(scene);
-        stage.setTitle("Teacher Form");
-        stage.show();
-    }
-
     public static void showAboutForm() throws IOException {
         Stage stage = new Stage();
         Scene scene = new Scene(
