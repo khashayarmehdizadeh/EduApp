@@ -3,6 +3,7 @@ package Main.model.da;
 
 import Main.model.entity.Teacher;
 import Main.model.entity.enums.Gender;
+import Main.model.entity.enums.City;
 import Main.model.tools.CRUD;
 import Main.model.tools.ConnectionProvider;
 import lombok.extern.log4j.Log4j;
@@ -34,7 +35,7 @@ public class TeacherDa implements AutoCloseable, CRUD<Teacher> {
         preparedStatement.setString(3, teacher.getFamily());
         preparedStatement.setString(4, teacher.getGender().name());
         preparedStatement.setDate(5, Date.valueOf(teacher.getBirthDate()));
-        preparedStatement.setString(6, teacher.getCity());
+        preparedStatement.setString(6, teacher.getCity().name());
         preparedStatement.setString(7, teacher.getPhoneNumber());
         preparedStatement.setString(8, teacher.getEmail());
         preparedStatement.setString(9, teacher.getSkills());
@@ -54,7 +55,7 @@ public class TeacherDa implements AutoCloseable, CRUD<Teacher> {
         preparedStatement.setString(2, teacher.getFamily());
         preparedStatement.setString(3, teacher.getGender().name());
         preparedStatement.setDate(4, Date.valueOf(teacher.getBirthDate()));
-        preparedStatement.setString(5, teacher.getCity());
+        preparedStatement.setString(5, teacher.getCity().name());
         preparedStatement.setString(6, teacher.getPhoneNumber());
         preparedStatement.setString(7, teacher.getEmail());
         preparedStatement.setString(8, teacher.getSkills());
@@ -88,7 +89,7 @@ public class TeacherDa implements AutoCloseable, CRUD<Teacher> {
                     .family(resultSet.getString("family"))
                     .gender(Gender.valueOf(resultSet.getString("gender")))
                     .birthDate(resultSet.getDate("birthDate").toLocalDate())
-                    .city(resultSet.getString("city"))
+                    .city(City.valueOf(resultSet.getString("city")))
                     .phoneNumber(resultSet.getString("poneNumber"))
                     .email(resultSet.getString("email"))
                     .skills(resultSet.getString("skills"))
@@ -115,7 +116,7 @@ public class TeacherDa implements AutoCloseable, CRUD<Teacher> {
                     .family(resultSet.getString("family"))
                     .gender(Gender.valueOf(resultSet.getString("gender")))
                     .birthDate(resultSet.getDate("birthDate").toLocalDate())
-                    .city(resultSet.getString("city"))
+                    .city(City.valueOf(resultSet.getString("city")))
                     .phoneNumber(resultSet.getString("poneNumber"))
                     .email(resultSet.getString("email"))
                     .skills(resultSet.getString("skills"))

@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8667421-2bae-4eb2-8e80-f6ec178d844e" name="Changes" comment="fxml">
-      <change afterPath="$PROJECT_DIR$/src/Main/view/WindowsManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/output.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/output.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/controller/EduController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/controller/EduController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/controller/TracherRgCpntroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/controller/TeacherRgController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/view/EduApp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/view/EduApp.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/view/TeacherRg.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/view/TeacherRg.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/controller/TeacherRgController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/controller/TeacherRgController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +82,11 @@
       <recent name="Main.controller.exceptions" />
     </key>
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="teacher" />
+    </option>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -120,7 +123,8 @@
       <workItem from="1721336983735" duration="546000" />
       <workItem from="1721338340374" duration="13000" />
       <workItem from="1721462305199" duration="3788000" />
-      <workItem from="1721762783096" duration="5031000" />
+      <workItem from="1721762783096" duration="5205000" />
+      <workItem from="1722112256931" duration="4001000" />
     </task>
     <task id="LOCAL-00001" summary="mkdir entity&#10;12;16&#10;6/29">
       <option name="closed" value="true" />
@@ -394,7 +398,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721764942805</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="fxml">
+      <option name="closed" value="true" />
+      <created>1721768007973</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1721768007973</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

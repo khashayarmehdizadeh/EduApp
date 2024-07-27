@@ -61,3 +61,13 @@
 2024-07-24 00:15:37 INFO  EduController:57 - App started
 2024-07-24 00:20:13 INFO  EduController:57 - App started
 2024-07-24 00:22:50 INFO  EduController:57 - App started
+2024-07-28 00:01:19 INFO  EduController:57 - App started
+2024-07-28 00:02:15 INFO  EduController:57 - App started
+2024-07-28 00:02:18 INFO  EduController:57 - App started
+2024-07-28 00:39:00 INFO  EduController:57 - App started
+2024-07-28 01:02:26 INFO  EduController:57 - App started
+2024-07-28 01:02:50 ERROR EduController:128 - save error:Invalid Family
+2024-07-28 01:02:54 INFO  EduController:122 - student saved{"id":41,"name":"KHASHAYAR","family":"mzz","gender":"male","birthDate":{"year":2018,"month":7,"day":12},"city":"abadan","phoneNumber":"09120185685","email":"mzkhashayar","address":"test","course":"Seo"}
+2024-07-28 01:02:58 INFO  EduController:168 - student Removed 41
+2024-07-28 01:07:52 INFO  EduController:57 - App started
+2024-07-28 01:08:03 ERROR EduController:157 - Edit ErrorFor input string: ""

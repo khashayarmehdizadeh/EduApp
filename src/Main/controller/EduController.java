@@ -199,8 +199,8 @@ public class EduController implements Initializable {
         });
     }
 
-    private void showDataOnTable(List<Student> personList) {
-        ObservableList<Student> observableList = FXCollections.observableList(personList);
+    private void showDataOnTable(List<Student> studentList) {
+        ObservableList<Student> observableList = FXCollections.observableList(studentList);
 
         idCol.setCellValueFactory(new PropertyValueFactory<>("id"));
         nameCol.setCellValueFactory(new PropertyValueFactory<>("name"));
