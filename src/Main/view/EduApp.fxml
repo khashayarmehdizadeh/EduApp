@@ -96,7 +96,6 @@
                   <items>
                     <MenuItem fx:id="closeMnu" mnemonicParsing="false" text="close" />
                         <MenuItem fx:id="newMnu" mnemonicParsing="false" text="New" />
-                        <MenuItem fx:id="teacherMnu" mnemonicParsing="false" text="New Teacher" />
                   </items>
                 </Menu>
                 <Menu fx:id="aboutMnu" mnemonicParsing="false" text="About">
@@ -153,11 +152,11 @@
             <ComboBox fx:id="citytCmb" prefHeight="25.0" prefWidth="147.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <Label text="Gender" GridPane.rowIndex="7" />
             <ComboBox fx:id="gendertCmb" layoutX="125.0" layoutY="102.0" prefHeight="25.0" prefWidth="147.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-            <ComboBox fx:id="courseteCmb" layoutX="145.0" layoutY="279.0" prefHeight="25.0" prefWidth="147.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <ComboBox fx:id="coursetCmb" layoutX="145.0" layoutY="279.0" prefHeight="25.0" prefWidth="147.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
             <Label text="Course Name" GridPane.rowIndex="8" />
          </children>
       </GridPane>
-      <TableView fx:id="teacherTable" layoutX="411.0" layoutY="579.0" prefHeight="334.0" prefWidth="374.0">
+      <TableView fx:id="tabaleTeacher" layoutX="411.0" layoutY="579.0" prefHeight="334.0" prefWidth="374.0">
          <columns>
             <TableColumn fx:id="idtCol" prefWidth="50.0" text="Id" />
             <TableColumn fx:id="nametCol" prefWidth="68.0" text="Name" />

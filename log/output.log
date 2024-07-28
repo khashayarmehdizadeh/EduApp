@@ -72,6 +72,7 @@
 2024-07-28 01:07:52 INFO  EduController:57 - App started
 2024-07-28 01:08:03 ERROR EduController:157 - Edit ErrorFor input string: ""
 2024-07-28 01:34:29 INFO  EduController:57 - App started
+2024-07-28 23:30:17 INFO  EduController:60 - App started
 2024-07-28 19:38:25 INFO  EduController:60 - App started
 2024-07-28 19:38:50 ERROR EduController:123 - save error:Invalid Family
 2024-07-28 19:38:57 INFO  EduController:117 - student saved{"id":2,"name":"khashyar","family":"mzm","gender":"male","birthDate":{"year":2010,"month":7,"day":13},"city":"abadan","phoneNumber":"09120185685","email":"testtest","address":"testets","course":"Seo"}
@@ -85,3 +86,12 @@
 2024-07-28 19:52:42 INFO  EduController:164 - student Removed 4
 2024-07-28 19:53:20 INFO  EduController:118 - student saved{"id":6,"name":"alizadeh","family":"mohseni","gender":"male","birthDate":{"year":2010,"month":7,"day":27},"city":"abadan","phoneNumber":"09191057433","email":"mzkhashayar@gmail.com","address":"saadata abad","course":"Seo"}
 2024-07-28 19:54:04 INFO  EduController:118 - student saved{"id":7,"name":"mohse","family":"mohsen zadeh","gender":"male","birthDate":{"year":2014,"month":7,"day":9},"city":"abadan","phoneNumber":"09185057433","email":"mzkhashayar@gmail.com","address":"tajrish","course":"HtmlCss2"}
+2024-07-28 23:32:29 INFO  EduController:61 - App started
+2024-07-28 23:32:37 INFO  EduController:61 - App started
+2024-07-28 23:33:47 INFO  EduController:61 - App started
+2024-07-28 23:34:20 INFO  EduController:118 - student saved{"id":42,"name":"KHASHAYAR","family":"mehidzadeh","gender":"male","birthDate":{"year":2012,"month":7,"day":17},"city":"abadan","phoneNumber":"09191057433","email":"mzkhashayar@gmail.com","address":"testtest","course":"Seo"}
+2024-07-28 23:52:49 INFO  EduController:76 - App started
+2024-07-28 23:53:27 INFO  EduController:76 - App started
+2024-07-28 23:56:42 INFO  EduController:77 - App started
+2024-07-28 23:57:15 INFO  EduController:150 - teacher saved{"id":21,"name":"alirezai","family":"mzzz","gender":"female","birthDate":{"year":2013,"month":7,"day":17},"city":"amol","phoneNumber":"09191057433","email":"test","skills":"javaee","address":"test","course":"JavaSe"}
+2024-07-29 00:32:41 INFO  EduController:78 - App started

@@ -1,6 +1,7 @@
 package Main.model.da;
 
 
+import Main.model.entity.Student;
 import Main.model.entity.Teacher;
 import Main.model.entity.enums.Gender;
 import Main.model.entity.enums.City;
@@ -128,6 +129,33 @@ public class TeacherDa implements AutoCloseable, CRUD<Teacher> {
                     .build();
         }
         return teacher;
+    }
+    public List<Teacher> findByFamily(String family) throws SQLException {
+        List<Teacher> teacherList = new ArrayList<>();
+        preparedStatement = connection.prepareStatement("SELECT * FROM  STUDENT WHERE FAMILY LIKE ? ORDER BY ID");
+        preparedStatement.setString(1,family+"%");
+        ResultSet resultSet=preparedStatement.executeQuery();
+        while (resultSet.next()){
+            Teacher teacher=Teacher
+                    .builder()
+                    .id(resultSet.getInt("id"))
+                    .name(resultSet.getString("name"))
+                    .family(resultSet.getString("family"))
+                    .gender(Gender.valueOf(resultSet.getString("gender")))
+                    .birthDate(resultSet.getDate("birthDate").toLocalDate())
+                    .city(City.valueOf(resultSet.getString("city")))
+                    .phoneNumber(resultSet.getString("poneNumber"))
+                    .email(resultSet.getString("email"))
+                    .skills(resultSet.getString("skills"))
+                    .address(resultSet.getString("address"))
+                    .course(Course.valueOf(resultSet.getString("course")))
+
+
+
+                    .build();
+            teacherList.add(teacher);
+        }
+        return teacherList;
     }
 
     @Override
