@@ -72,3 +72,16 @@
 2024-07-28 01:07:52 INFO  EduController:57 - App started
 2024-07-28 01:08:03 ERROR EduController:157 - Edit ErrorFor input string: ""
 2024-07-28 01:34:29 INFO  EduController:57 - App started
+2024-07-28 19:38:25 INFO  EduController:60 - App started
+2024-07-28 19:38:50 ERROR EduController:123 - save error:Invalid Family
+2024-07-28 19:38:57 INFO  EduController:117 - student saved{"id":2,"name":"khashyar","family":"mzm","gender":"male","birthDate":{"year":2010,"month":7,"day":13},"city":"abadan","phoneNumber":"09120185685","email":"testtest","address":"testets","course":"Seo"}
+2024-07-28 19:39:34 INFO  EduController:163 - student Removed 2
+2024-07-28 19:42:01 INFO  EduController:117 - student saved{"id":3,"name":"khashyar","family":"mzzzz","gender":"male","birthDate":{"year":2016,"month":7,"day":19},"city":"abadan","phoneNumber":"09120185685","email":"testets","address":"testets","course":"Seo"}
+2024-07-28 19:42:49 INFO  EduController:117 - student saved{"id":4,"name":"ALIZADEH","family":"HASSANI","gender":"male","birthDate":{"year":2017,"month":7,"day":18},"city":"abadan","phoneNumber":"09120185685","email":"mzkhashyar@gmail.com","address":"testets","course":"JavaEE"}
+2024-07-28 19:43:11 INFO  EduController:117 - student saved{"id":5,"name":"aliii","family":"hasani","gender":"male","birthDate":{"year":2017,"month":7,"day":18},"city":"abadan","phoneNumber":"09120185685","email":"mzkhashyar@gmail.com","address":"testets","course":"JavaEE"}
+2024-07-28 19:43:23 INFO  EduController:146 - Student Edited{"id":4,"name":"alirezai","family":"mohseni","gender":"male","birthDate":{"year":2017,"month":7,"day":18},"city":"abadan","phoneNumber":"09120185685","email":"mzkhashyar@gmail.com","address":"testets","course":"JavaEE"}
+2024-07-28 19:52:21 INFO  EduController:163 - student Removed 3
+2024-07-28 19:52:36 INFO  EduController:61 - App started
+2024-07-28 19:52:42 INFO  EduController:164 - student Removed 4
+2024-07-28 19:53:20 INFO  EduController:118 - student saved{"id":6,"name":"alizadeh","family":"mohseni","gender":"male","birthDate":{"year":2010,"month":7,"day":27},"city":"abadan","phoneNumber":"09191057433","email":"mzkhashayar@gmail.com","address":"saadata abad","course":"Seo"}
+2024-07-28 19:54:04 INFO  EduController:118 - student saved{"id":7,"name":"mohse","family":"mohsen zadeh","gender":"male","birthDate":{"year":2014,"month":7,"day":9},"city":"abadan","phoneNumber":"09185057433","email":"mzkhashayar@gmail.com","address":"tajrish","course":"HtmlCss2"}

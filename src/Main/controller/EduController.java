@@ -46,10 +46,11 @@ public class EduController implements Initializable {
     private TableColumn<Student, String> nameCol, familyCol,courseCol;
     @FXML
     private  MenuItem closeMnu,newMnu,aboutMnu;
-    @FXML
-    private TextField idtTxt,nametTxt,familytTxt,mailetTxt,skilltTxt,phonenumbertTxt,addresstTxt;
-    @FXML
-    private DatePicker birthdatetTxt;
+    //for teachercontroller
+//    @FXML
+//    private TextField idtTxt,nametTxt,familytTxt,mailetTxt,skilltTxt,phonenumbertTxt,addresstTxt;
+//    @FXML
+//    private DatePicker birthdatetTxt;
 
 
 
@@ -174,7 +175,7 @@ public class EduController implements Initializable {
             try (StudentDa studentDa = new StudentDa()) {
                 showDataOnTable(studentDa.findByFamily(searchTxt.getText()));
             } catch (Exception e) {
-                Alert alert = new Alert(Alert.AlertType.ERROR, " Persons\n" + e.getMessage());
+                Alert alert = new Alert(Alert.AlertType.ERROR, " student\n" + e.getMessage());
                 alert.show();
             }
         });
